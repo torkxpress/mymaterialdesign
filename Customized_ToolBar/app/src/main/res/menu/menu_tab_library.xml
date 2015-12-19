@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Activity_Main_Tab_library">
+
+    <item android:id="@+id/action_settings_tab_library" android:title="Home"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/next"  android:title="Next" android:icon="@drawable/actions_go_next_icon"
+        android:orderInCategory="200" app:showAsAction="ifRoom">
+
+    </item>
+
+</menu>

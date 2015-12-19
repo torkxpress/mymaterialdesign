@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+
+    android:id="@+id/myToolBar"
+    app:theme="@style/MyToolbarTheme"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+    <!-- make dark pop up theme-->
+
+   <!-- this tool bar is included in main activity and then initialized in main activity .java
+   you can also set pop theme-->
+
+<!--android:layout_height="?android:attr/actionBarSize" To make sure that toolbar size remains same across all devices -->
+
+</android.support.v7.widget.Toolbar>

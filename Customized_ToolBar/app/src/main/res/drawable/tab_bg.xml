@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ripple is not supported in pre lollipop devices, so we use work around -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/colorHeighlight"></solid>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/white"></solid>
+        </shape>
+    </item>
+</selector>
+
+
+    <!-- You can describe the state list in an XML file. Each color is defined in an <item> element inside
+    a single <selector> element.
+    Each <item> uses various attributes to describe the state in which it should be used.
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+            android:color="hex_color"
+            android:state_pressed=["true" | "false"]
+            android:state_focused=["true" | "false"]
+            android:state_selected=["true" | "false"]
+            android:state_checkable=["true" | "false"]
+            android:state_checked=["true" | "false"]
+            android:state_enabled=["true" | "false"]
+            android:state_window_focused=["true" | "false"] />
+    </selector>
+
+
+    EXAMPLE:
+    XML file saved at res/color/button_text.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:state_pressed="true"
+              android:color="#ffff0000"/>  pressed
+
+    <item android:state_focused="true"
+    android:color="#ff0000ff"/> focused
+
+    <item android:color="#ff000000"/>  default
+        </selector>
+
+        This layout XML will apply the color list to a View:
+
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/button_text"
+    android:textColor="@color/button_text" />
+
+
+
+    -->

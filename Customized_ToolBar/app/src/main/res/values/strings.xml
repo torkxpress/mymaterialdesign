@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Material Design</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sub">subAct</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Not implemented. Only middle tab, MovieBox Office, implemented</string>
+    <string name="drawer_open"> Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="tabs">
+        <item>Inbox</item>
+        <item>Sent</item>
+        <item>Compose</item>
+        <item>Folder</item>
+        <item>Home</item>
+        <item>Web</item>
+    </string-array>
+</resources>

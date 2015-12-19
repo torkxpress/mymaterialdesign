@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.riaz.Custom_ToolBar_NavigationDrawer" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!-- Always required on API<21 , needed to keep a wake lock while your job is running -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <!-- Always required on API<21 , if you are using setRequiredNetworkType(int) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <!-- Always required on all API levels, if you are using setPersisted(true) -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+
+        android:name=".materialtest.MyApplication"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:name=".MyApplication" is added to the application manually-->
+
+        <activity
+            android:name=".activities.Activity_Main_Tab_Library_icon"
+            android:label="Material Design" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.subAct"
+            android:label="Sub Activity Layout" >
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.riaz.Custom_ToolBar_NavigationDrawer.activities.Activity_Main_Tab_Library_icon">
+
+            </meta-data>
+        </activity>
+
+
+        <service android:name=".services.MyService"
+
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported = "true"
+        />
+
+
+
+    </application>
+
+
+</manifest>

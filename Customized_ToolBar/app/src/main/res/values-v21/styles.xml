@@ -1,0 +1,24 @@
+<resources>
+
+   <!-- for styles v21 api 21, create a folder values-v21 and copy style file into and change style name to AppTheme
+   as given name in manifest
+   OR
+   right click on styles.. New.. Values Resource File... name it styles.xml and from available qualifier select version
+    at the very bottom and write the api verison no, like 19 for kit kat, 21 for lollipop-->
+
+
+       <style name="AppTheme." parent="MyAppTheme.Base">
+           <item name="android:colorPrimary">@color/colorPrimary</item>
+           <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+           <item name="android:colorAccent">@color/colorPrimary</item>
+
+           <item name="android:windowTranslucentStatus"> true</item>
+            <!--its not working as it is supposed to.. use fitsystemwindows true in main activity xml just to fit the paddings -->
+
+           <!--<item name="android:colorAccent">@color/colorPrimary</item> add android: to make it compatible for API21 -->
+
+           <!--For Ripple effect -->
+           <item name="android:colorControlHighlight">@color/colorHeighlight</item>
+       </style>
+
+</resources>

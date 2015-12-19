@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme." parent="MyAppTheme.Base">
+
+
+        <item name="android:windowTranslucentStatus"> true</item>
+        <!--its not working as it is supposed to.. use fitsystemwindows true in main activity xml just to fit the paddings -->
+
+        <!--<item name="android:colorAccent">@color/colorPrimary</item> add android: to make it compatible for API21 -->
+    </style>
+
+</resources>

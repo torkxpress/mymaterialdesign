@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+
+
+
+</ripple>
+
+    <!-- ripple is like a state selector
+    
+     Mask is used to contraint the ripple to clicked item layout not the whole layout in case the main layout contain many
+     layout. just like in this example navigation drawer contains many view so we need to contraint ripple effect to each view
+     when each view is click.
+    
+     -->

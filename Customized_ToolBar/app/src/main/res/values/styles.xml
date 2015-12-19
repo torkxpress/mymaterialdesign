@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyAppTheme.Base"></style>
+
+    <!-- you can customize Tool bar.
+        YOU CAN USE LIGHT Theme  and when u set DarkActionBar it automatically sets the text color light
+        if u just set NoActionBar then it makes entire app dark with no action bar and text is assumed to be white,
+        to specify action bar text color
+          in relation to the theme what u can do is that you specify a separate theme for tool bar
+        by specifying app theme in app_bar.xml... for example
+        in app_bar.xml  app:theme="@style/MyCustomToolBarTheme"  makes the theme light
+        with out setting this theme, app_bar.xml the tool bar color is yellow(primary color) with white text on it
+         but when we specify this then it remains yellow but text is dark color
+         Or you can define your own style for example  app:theme="@style/MyCustomToolBarTheme"
+          We can also change the tool bar pop menu color (for example on tool bar setting menu)-->
+       <style name="MyAppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+           <item name="colorPrimary">@color/colorPrimary</item>
+           <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+           <item name="colorAccent">@color/colorPrimary</item>
+           
+
+           <!--<item name="android:colorAccent">@color/colorPrimary</item> requires API21 so just remove the android -->
+       </style>
+
+    <!--you can make your own style to customize the tool bar text, menu and icon colors -->
+
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- .Dark or .Ligth or Just AppCompat have the same results, as we have defined the text primary and secondary color
+        if you don't define the color then light and dark theme will adjust the colors accordingly -->
+        <item name="android:textColorPrimary"> #00f</item>
+        <!-- sets text color-->
+        <item name="android:textColorSecondary"> #f00</item>
+        <!-- sets button color-->
+
+
+
+    </style>
+
+</resources>

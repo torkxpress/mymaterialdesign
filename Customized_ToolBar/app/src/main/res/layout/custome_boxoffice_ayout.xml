@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="80dp"
+        android:id="@+id/movieThumbnail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/fragment_smiling"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MovieTitle"
+        android:id="@+id/movieTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/movieThumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/movieReleasedate"
+        android:gravity="right"
+        android:layout_alignBottom="@+id/movieThumbnail"
+        android:layout_alignRight="@+id/movieTitle"
+        android:layout_alignEnd="@+id/movieTitle" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:id="@+id/movieRatingBar"
+        android:isIndicator="true"
+        android:layout_below="@+id/movieThumbnail"
+        android:layout_alignRight="@+id/movieReleasedate"
+        android:layout_alignEnd="@+id/movieReleasedate" />
+
+
+</RelativeLayout>
